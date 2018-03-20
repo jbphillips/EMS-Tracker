@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DatePipe } from '@angular/common';
+import { dive } from 'scuba-dive';
+import { SERVER_TRANSITION_PROVIDERS } from '@angular/platform-browser/src/browser/server-transition';
 
 @Component({
   selector: 'page-emstracker',
@@ -9,6 +11,7 @@ import { DatePipe } from '@angular/common';
 export class EMSTrackerPage {
 
   timeStamp: number;
+  iDive: dive
 
   constructor(public navCtrl: NavController) {
   }

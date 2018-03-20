@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { EMSTrackerPage } from '../pages/emstracker/emstracker';
 import { LogPage } from '../pages/log/log';
+import { dive } from 'scuba-dive';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -23,7 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     EMSTrackerPage,
-    LogPage
+    LogPage,
+    dive
   ],
   providers: [
     StatusBar,
