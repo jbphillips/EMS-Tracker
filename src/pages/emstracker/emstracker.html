@@ -16,13 +16,13 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onClickDispatched()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           Dispatched
         </button>
       </ion-col>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onClickEnroute()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           Enroute
         </button>
@@ -30,13 +30,13 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onClickOnscene()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           Onscene
         </button>
       </ion-col>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onClickAtPatient()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           At Patient
         </button>
@@ -44,13 +44,13 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onClickDepart()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           Depart scene
         </button>
       </ion-col>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onClickArrive()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           Arrive Hospital
         </button>
@@ -58,22 +58,25 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onclickLeave()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           Leave Hospital
         </button>
       </ion-col>
       <ion-col>
-        <button id="eMSTracker-button4" ion-button color="positive" block icon-left>
+        <button id="eMSTracker-button4" (click)="onClickInService()" ion-button color="positive" block icon-left>
           <ion-icon name="checkmark"></ion-icon>
           In service
         </button>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <button id="eMSTracker-button4" ion-button color="danger" block icon-left>
+  <button id="eMSTracker-button4" (click)="onClickCanceled()" ion-button color="danger" block icon-left>
     <ion-icon name="checkmark"></ion-icon>
     Canceled
   </button>
+
+  <p>The custom date is {{timeStamp | date:'yyyy-MM-dd HH:mm a'}}</p>
+  <br>
   
 </ion-content>
