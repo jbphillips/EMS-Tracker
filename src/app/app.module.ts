@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { EMSTrackerPage } from '../pages/emstracker/emstracker';
-import { LogPage } from '../pages/log/log';
-import { dive } from 'scuba-dive';
-
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,8 +10,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    EMSTrackerPage,
-    LogPage
+    EMSTrackerPage
   ],
   imports: [
     BrowserModule,
@@ -23,9 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    EMSTrackerPage,
-    LogPage,
-    dive
+    EMSTrackerPage
   ],
   providers: [
     StatusBar,
